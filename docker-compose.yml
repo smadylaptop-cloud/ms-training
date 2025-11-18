@@ -2,10 +2,18 @@ services:
   user-service:
     build: ./user_service
     container_name: user-service
+    depends_on:
+      kafka:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
     ports:
       - "8001:8001"
     environment:
       - ORDER_SERVICE_URL=http://order-service:8002/orders
+      - KAFKA_BOOTSTRAP=kafka:9092
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
     volumes:
       - ./data:/app/data
     networks:
@@ -14,8 +22,13 @@ services:
   order-service:
     build: ./order_service
     container_name: order-service
+    depends_on:
+      kafka:
+        condition: service_healthy
     ports:
       - "8002:8002"
+    environment:
+      - KAFKA_BOOTSTRAP=kafka:9092
     volumes:
       - ./data:/app/data
     networks:
@@ -52,6 +65,19 @@ services:
         ]
       interval: 10s
       timeout: 5s
+      retries: 5
+    networks:
+      - micro-net
+
+  redis:
+    image: redis:7
+    container_name: redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
       retries: 5
     networks:
       - micro-net
