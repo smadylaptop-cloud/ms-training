@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "user_id": 1,
+        "item": "Laptop"
+    },
+    {
+        "id": 2,
+        "user_id": 1,
+        "item": "Mouse"
+    },
+    {
+        "id": 3,
+        "user_id": 1,
+        "item": "Keyboard"
+    },
+    {
+        "id": 4,
+        "user_id": 2,
+        "item": "Phone"
+    },
+    {
+        "id": 5,
+        "user_id": 2,
+        "item": "Headphones"
+    },
+    {
+        "id": 6,
+        "user_id": 2,
+        "item": "Charger"
+    },
+    {
+        "id": 7,
+        "user_id": 3,
+        "item": "Monitor"
+    },
+    {
+        "id": 8,
+        "user_id": 3,
+        "item": "USB Cable"
+    },
+    {
+        "id": 9,
+        "user_id": 3,
+        "item": "Webcam"
+    },
+    {
+        "id": 10,
+        "user_id": 4,
+        "item": "Tablet"
+    },
+    {
+        "id": 11,
+        "user_id": 4,
+        "item": "Stylus Pen"
+    },
+    {
+        "id": 12,
+        "user_id": 4,
+        "item": "Case"
+    },
+    {
+        "id": 13,
+        "user_id": 5,
+        "item": "Printer"
+    },
+    {
+        "id": 14,
+        "user_id": 5,
+        "item": "Ink Cartridge"
+    },
+    {
+        "id": 15,
+        "user_id": 5,
+        "item": "Paper Pack"
+    },
+    {
+        "id": 16,
+        "user_id": 2,
+        "item": "Car"
+    }
+]
