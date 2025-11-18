@@ -37,14 +37,15 @@ services:
       KAFKA_LOG_DIRS: /var/lib/kafka/data
       CLUSTER_ID: "zRh-jDclQJCSxbanIX3Zdw"
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_MIN_INSYNC_REPLICAS: 1
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
-      - kafka_data:/var/lib/kafka/data
+      - ./kafka_data:/var/lib/kafka/data
     healthcheck:
       test:
         [
           "CMD",
-          "kafka-topics.sh",
+          "/usr/bin/kafka-topics",
           "--bootstrap-server",
           "localhost:9092",
           "--list",
