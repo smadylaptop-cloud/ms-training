@@ -1,26 +1,51 @@
 [
     {
         "id": 1,
-        "name": "John"
+        "name": "John",
+        "email": "john.doe@example.com",
+        "salt": "87ab4c2e3f98d1c5a0b234f71e9ad022",
+        "password_hash": "b00e892980b579da53ffef65f56875a1623e6e71beaa59e5fb21251bbb700f14"
     },
     {
         "id": 2,
-        "name": "Sarah"
+        "name": "Sarah",
+        "email": "sarah.williams@example.com",
+        "salt": "b1e4a93c77d2fea1c9320baf22f8f589",
+        "password_hash": "18e6c2fa70025ccbe601bb79d5c55f52e056202a2aa7502d254c7ac450ef7fb6"
     },
     {
         "id": 3,
-        "name": "Alice"
+        "name": "Alice",
+        "email": "alice.morgan@example.com",
+        "salt": "d90c773427fea812a2b4c97e19e8a350",
+        "password_hash": "d727172890fb3a2440bd8737ea41e97f68d8c4bfe54f81b18e717d9b55657c5d"
     },
     {
         "id": 4,
-        "name": "Bob"
+        "name": "Bob",
+        "email": "bob.anderson@example.com",
+        "salt": "e33f9aa71f1d5b0cd2f4c8a991af233d",
+        "password_hash": "d488665d815c1c6b6bd1db26cf64750bb625f7191c5f7f6d50a9ed4c514963d2"
     },
     {
         "id": 5,
-        "name": "Emma"
+        "name": "Emma",
+        "email": "emma.jordan@example.com",
+        "salt": "5cc31ff2d3e4b1b9a94d60fe44afc6aa",
+        "password_hash": "2414ddaf760ff78d8b8c8deeaaceeaa025cf44ed306ab16cca7672d92fdc2ea2"
     },
     {
         "id": 6,
-        "name": "Abdulsalam"
+        "name": "Abdulsalam",
+        "email": "abdulsalam@example.com",
+        "salt": "99d7a01f5be38b2330071a457ccfe0cd",
+        "password_hash": "e23c34c4fe8ef2c2689800dae7c845e2ef94e28d1dd42a633969777f2eaccb9c"
+    },
+    {
+        "id": 7,
+        "name": "Ali",
+        "email": "ali@gmail.com",
+        "salt": "5c87770a53e486b85432273248173b01",
+        "password_hash": "124985ae2370322ceb25c4cb5fb3c0b005e78a06c691ad2d95834f5a23bbd939"
     }
 ]

@@ -1,4 +1,18 @@
 services:
+  auth-service:
+    build: ./auth_service
+    container_name: auth-service
+    depends_on:
+      user-service:
+        condition: service_started
+    ports:
+      - "8003:8003"
+    environment:
+      - USER_SERVICE_URL=http://user-service:8001/users
+      - JWT_SECRET=supersecretjwtkey123
+    networks:
+      - micro-net
+
   user-service:
     build: ./user_service
     container_name: user-service
@@ -14,6 +28,7 @@ services:
       - KAFKA_BOOTSTRAP=kafka:9092
       - REDIS_HOST=redis
       - REDIS_PORT=6379
+      - JWT_SECRET=supersecretjwtkey123
     volumes:
       - ./data:/app/data
     networks:
