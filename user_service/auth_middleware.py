@@ -24,8 +24,16 @@ def require_jwt(func):
             request.user = decoded  # store user info for route access
         except jwt.ExpiredSignatureError:
             return jsonify({"error": "Token expired"}), 401
-        except jwt.InvalidTokenError:
-            return jsonify({"error": "Invalid token"}), 401
+        except jwt.ExpiredSignatureError:
+            return jsonify({"error": "Token expired"}), 401
+        except jwt.InvalidAudienceError as e:
+            return jsonify({"error": f"Invalid audience: {str(e)}"}), 401
+        except jwt.InvalidIssuerError as e:
+            return jsonify({"error": f"Invalid issuer: {str(e)}"}), 401
+        except jwt.DecodeError as e:
+            return jsonify({"error": f"Decode error (signature mismatch or malformed): {str(e)}"}), 401
+        except jwt.InvalidTokenError as e:
+            return jsonify({"error": f"Other invalid token error: {str(e)}"}), 401
 
         return func(*args, **kwargs)
 

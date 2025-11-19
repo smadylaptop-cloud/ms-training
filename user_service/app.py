@@ -110,6 +110,7 @@ def get_user_orders(user_id):
 
 
 @app.route("/users", methods=["GET"])
+@require_jwt 
 def get_users():
     safe_users = [
         {"id": u["id"], "name": u["name"], "email": u["email"]}
@@ -119,6 +120,7 @@ def get_users():
 
 
 @app.route("/users/<int:user_id>", methods=["GET"])
+@require_jwt    
 def get_user(user_id):
     user = next((u for u in users if u["id"] == user_id), None)
     if not user:

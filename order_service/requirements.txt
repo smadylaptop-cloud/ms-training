@@ -1,3 +1,5 @@
 flask
 confluent_kafka
 PyJWT
+requests
+redis

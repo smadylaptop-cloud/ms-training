@@ -47,5 +47,82 @@
         "email": "ali@gmail.com",
         "salt": "5c87770a53e486b85432273248173b01",
         "password_hash": "124985ae2370322ceb25c4cb5fb3c0b005e78a06c691ad2d95834f5a23bbd939"
+    },
+    {
+        "id": 8,
+        "name": "Ali",
+        "email": "ali@gmail.com",
+        "salt": "e5f30ab86459475b599c02dec8a3d93a",
+        "password_hash": "b7a42bf10c23e5c064efc3ebcd8596fb9ac706c871829d9fc6c2e31a4315a0cf"
+    },
+    {
+        "id": 9,
+        "name": "new user",
+        "email": "newuser@gmail.com",
+        "salt": "c8ca6917b858a6b3ff5471c3d88c5a4a",
+        "password_hash": "65c7a869cfe58771507207a0eba9bb275e3f488212b13c26d285860e9a4b5ff0"
+    },
+    {
+        "id": 10,
+        "name": "new user2",
+        "email": "newuser2@gmail.com",
+        "salt": "80d15544048a7bb3fe0d62f197ab0989",
+        "password_hash": "bce6461e749942d00f16eee274b3b1725b035cd30cb27247e53d694c31edbaf0"
+    },
+    {
+        "id": 11,
+        "name": "new user2",
+        "email": "newuser2@gmail.com",
+        "salt": "e71cd3a8e679f77315c618873c3ee232",
+        "password_hash": "814f28a9a22fe7119a6af9a176a106358b9bf305e1b1365aab2074c98bb17ab8"
+    },
+    {
+        "id": 12,
+        "name": "new user2",
+        "email": "newuser2@gmail.com",
+        "salt": "2054a9b46ad01439d32927ed4803cb70",
+        "password_hash": "324d5d24dd335e370bc74db5f8dd81dcb813fdfb453806f6e36087d50324e344"
+    },
+    {
+        "id": 13,
+        "name": "new user5",
+        "email": "newuser2@gmail.com",
+        "salt": "22218ccbf61c77b842dc35604089ca0f",
+        "password_hash": "6a7f3d5837103efba17130a09dc65bbd30838d92b8a8af0ee1f90030f0a09ad8"
+    },
+    {
+        "id": 14,
+        "name": "new user5",
+        "email": "newuser2@gmail.com",
+        "salt": "e888459fb37bcf3420e08a7c6ab93e92",
+        "password_hash": "db86cff7562fcd32026ce4dd14f0c562f8a352802774b046679a2f3285f39d3d"
+    },
+    {
+        "id": 15,
+        "name": "new user5",
+        "email": "newuser2@gmail.com",
+        "salt": "3de3408f47bc31ec1f4eb8a848e1fc84",
+        "password_hash": "d36fd7b1cd05d9f92854e44ebbb18726f9612e287939ebb3c0d40647668f8021"
+    },
+    {
+        "id": 16,
+        "name": "new userdfqwef5",
+        "email": "newuser2@gmail.com",
+        "salt": "fa1902793945a2e1539544abd1e50da1",
+        "password_hash": "8a97b2c8e7affc27a6776dd7bb81a8f0319fafb23a0401b298a88133ba600c84"
+    },
+    {
+        "id": 17,
+        "name": "new userdfqwefsdd",
+        "email": "newuser2@gmail.com",
+        "salt": "2baab81141fdd5260b5c2d114680e8fa",
+        "password_hash": "7c65dbf608e4db273c038656c99fe0f2d5b55d220efec38981056922a321d9c3"
+    },
+    {
+        "id": 18,
+        "name": "new userdfqwefsdd",
+        "email": "newuser2@gmail.com",
+        "salt": "d247abe0a4a9c886698899b3c2d9b44b",
+        "password_hash": "d6c6b7d555e608e66b1fe5cd11bb7af9c58ec0186be12b55b550056e64a4112a"
     }
 ]

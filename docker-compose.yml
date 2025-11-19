@@ -10,6 +10,8 @@ services:
     environment:
       - USER_SERVICE_URL=http://user-service:8001/users
       - JWT_SECRET=supersecretjwtkey123
+      - SERVICE_APP_ID=my-microservice-app
+      - SERVICE_APP_SECRET=lcsnacioacas134ass
     networks:
       - micro-net
 
@@ -29,6 +31,8 @@ services:
       - REDIS_HOST=redis
       - REDIS_PORT=6379
       - JWT_SECRET=supersecretjwtkey123
+      - SERVICE_APP_ID=my-microservice-app
+      - SERVICE_APP_SECRET=lcsnacioacas134ass
     volumes:
       - ./data:/app/data
     networks:
@@ -44,6 +48,13 @@ services:
       - "8002:8002"
     environment:
       - KAFKA_BOOTSTRAP=kafka:9092
+      - USER_SERVICE_URL=http://user-service:8001/users
+      - JWT_SECRET=supersecretjwtkey123
+      - SERVICE_APP_ID=my-microservice-app
+      - SERVICE_APP_SECRET=lcsnacioacas134ass
+      - AUTH_SERVICE_URL=http://auth-service:8003/auth
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
     volumes:
       - ./data:/app/data
     networks:
